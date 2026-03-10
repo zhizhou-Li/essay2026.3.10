@@ -1,0 +1,26 @@
+# 排除 Agent 目录下的所有输出文件夹
+Agent/outputs/
+
+# 排除其他可能存在的输出目录
+output_convergence_zh/
+experiment_convergence_zh.csv
+
+# 排除 Python 缓存
+**/__pycache__/
+*.pyc
+
+# 排除 IDE 配置文件
+.idea/
+.vscode/
+
+# 排除大文件和执行程序
+Agent.zip
+*.exe
+
+# 只添加 Agent 文件夹（Git 会根据 .gitignore 自动跳过里面的 outputs）
+git add Agent/
+
+# 记得也把过滤规则文件加上
+git add .gitignore
+
+.env
